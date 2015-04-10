@@ -1,0 +1,61 @@
+import java.awt.Dimension;
+import java.awt.GridBagConstraints;
+import java.awt.GridBagLayout;
+
+import javax.swing.BorderFactory;
+import javax.swing.JButton;
+import javax.swing.JLabel;
+import javax.swing.JPanel;
+import javax.swing.JTextField;
+
+public class TempInput extends JPanel {
+	
+	public TempInput(){
+		Dimension size = getPreferredSize();
+		size.height = 200;
+		setPreferredSize(size);
+		
+		setBorder(BorderFactory.createTitledBorder("Convert Celcius to Farenheight"));
+		
+		JLabel tempLabel = new JLabel("Hello World");
+		JTextField tempInput = new JTextField(10);
+		JButton submit = new JButton("Submit");
+		
+		setLayout(new GridBagLayout());
+		GridBagConstraints gc = new GridBagConstraints();
+		
+		// First Column
+		gc.anchor = GridBagConstraints.LINE_START;
+		gc.gridx = 0;
+		gc.gridy = 1;
+		
+		add(tempLabel, gc);
+		
+		gc.anchor = GridBagConstraints.LINE_END;
+		gc.gridx = 1;
+		gc.gridy = 1;
+		
+		add(tempInput, gc);
+		
+		// Second Column
+		
+		gc.anchor = GridBagConstraints.CENTER;
+		gc.gridx = 0;
+		gc.gridy = 2;
+		
+		add(submit, gc);
+	}
+
+}
+
+
+
+
+
+
+
+
+
+
+
+

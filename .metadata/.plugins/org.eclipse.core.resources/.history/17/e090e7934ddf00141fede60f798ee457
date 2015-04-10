@@ -1,0 +1,17 @@
+import java.awt.Dimension;
+
+import javax.swing.BorderFactory;
+import javax.swing.JPanel;
+
+public class TempInput extends JPanel {
+	
+	public TempInput(){
+		Dimension size = getPreferredSize();
+		size.height = 200;
+		setPreferredSize(size);
+		
+		setBorder(BorderFactory.createTitledBorder("Temperature to convert"));
+		
+	}
+
+}

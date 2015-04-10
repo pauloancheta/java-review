@@ -1,0 +1,28 @@
+import java.awt.BorderLayout;
+import java.awt.Container;
+
+import javax.swing.JFrame;
+import javax.swing.JTextArea;
+
+
+public class MainFrame extends JFrame {
+	public MainFrame(String title){
+		super(title);
+		
+		// Set Layout Manager
+		setLayout(new BorderLayout() );
+		
+		// Create Swing Components
+		TempInput temp_input = new TempInput();
+		JTextArea converted_temp = new JTextArea();
+		
+		converted_temp.setSize(300, 200);
+		
+		// Add Swing Components to panel
+		Container c = getContentPane();
+		c.add(temp_input, BorderLayout.NORTH);
+		c.add(converted_temp, BorderLayout.AFTER_LAST_LINE);
+		
+		
+	}
+}

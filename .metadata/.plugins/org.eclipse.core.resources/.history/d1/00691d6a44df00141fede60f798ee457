@@ -1,0 +1,8 @@
+import java.awt.Event;
+
+
+public class DetailEvent extends Event {
+	public DetailEvent(Object source){
+		
+	}
+}

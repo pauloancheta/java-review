@@ -1,0 +1,28 @@
+
+public class TextEditor {
+
+	public static void main(String[] args) {
+		// TODO Auto-generated method stub
+		boolean i = true;
+		int j = 100;
+		while(i){
+			if(j%2 == 0){
+				System.out.println(j + "Fizz");
+			}
+			else if(j%3 == 0){
+				System.out.println(j + "Buzz");
+			}
+			else if(j%6 == 0){
+				System.out.println(j + "FizzBuzz");
+			}
+			else{
+				System.out.println(j + "Bacon");
+			}
+			j--;
+			if(j < 1){
+				i = false;
+			}
+		}
+	}
+
+}

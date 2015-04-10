@@ -1,0 +1,30 @@
+import java.awt.BorderLayout;
+import java.awt.Container;
+
+import javax.swing.JButton;
+import javax.swing.JFrame;
+import javax.swing.JLabel;
+import javax.swing.JTextField;
+
+
+public class MainFrame extends JFrame {
+	public MainFrame(String title){
+		super(title);
+		
+		// Set Layout Manager
+		setLayout(new BorderLayout() );
+		
+		// Create Swing Components
+		JLabel celcius = new JLabel();
+		JTextField temp_input = new JTextField();
+		JButton convert = new JButton();
+		
+		// Add Swing Components to panel
+		Container c = getContentPane();
+		c.add(celcius, BorderLayout.WEST);
+		c.add(temp_input, BorderLayout.EAST);
+		c.add(convert, BorderLayout.SOUTH);
+		
+		
+	}
+}

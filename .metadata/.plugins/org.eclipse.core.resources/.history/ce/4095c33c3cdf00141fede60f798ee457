@@ -1,0 +1,11 @@
+
+public class TextEditor {
+
+	public static void main(String[] args) {
+		// TODO Auto-generated method stub
+		while(i){
+			System.out.println("Hello World");
+		}
+	}
+
+}
